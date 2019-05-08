@@ -5,6 +5,12 @@ Please install clojure, see https://clojure.org/guides/getting_started
 
 # Run
 
+```
+./generate_video.sh && xdg-open video.mp4
+```
+
+# Run in details
+
 1. Need to generate all the png
 
 ```

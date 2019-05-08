@@ -9,8 +9,8 @@
 
 (defn generate-picture [number]
   (print ". ")
-  (.drawLine g 0 0 20 (* 10 number))
-  (.drawLine g 500 0 20 (* 10 number))
+  (.drawLine g 0 0 (* 5 number) (* 10 number))
+  (.drawLine g 500 0 (* 5 number) (* 10 number))
   (ImageIO/write bi "png"  (File. (str "pictures/" "test" (format "%02d" number) ".png")))
   )
 
