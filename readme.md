@@ -25,3 +25,11 @@ ffmpeg -framerate 1 -i "pictures/test%02d.png" video.mp4
 # longer video
 ffmpeg -loop 1 -t 15 -framerate 20 -i "pictures/test%02d.png"  video.mp4
 ```
+
+# Create a gif
+
+```
+clj -i test_png.clj -m generate.video
+ffmpeg -y -i "pictures/test%02d.png" output.gif
+xdg-open output.gif
+```
