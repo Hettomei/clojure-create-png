@@ -33,3 +33,7 @@ clj -i test_png.clj -m generate.video
 ffmpeg -y -i "pictures/test%02d.png" output.gif
 xdg-open output.gif
 ```
+
+Result :
+
+![output.gif](output.gif)
